@@ -103,9 +103,18 @@ header {
     vertical-align: middle;
 }
 
+#project-list {
+    display: flex;
+    flex-direction: grid;
+    grid-template-columns: 4;
+    grid-template-rows: auto;
+    margin: 40px 30px;
+    gap: 20px;
+    
+}
 /* Project cards */
 
-.projects-card {
+.project-card {
  background-color: var(--background-100);
  border-radius: 8px;
  cursor:pointer
