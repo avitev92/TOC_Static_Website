@@ -12,6 +12,7 @@
     --fontsize-small: 10px;
     --fontsize-medium: 14px;
     --fontsize-large: 18px;
+    --fontsize-xlarge: 22px;
 }
 * {
     font-family: 'Inter', sans-serif;
@@ -38,6 +39,21 @@ button{
     border-radius: 100px;
     border:none;
 }
+
+h2 {
+    font-size: var(--fontsize-xlarge);
+}
+
+h3 {
+    font-size: var(--fontsize-large);
+}
+h4 {
+    font-size: var(--fontsize-medium);
+}
+h5 {
+    font-size: var(--fontsize-small);
+}
+
 
 button:hover{
     background-color: var(--primary-400);
@@ -85,4 +101,41 @@ header {
 .material-icons-round {
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* Project cards */
+
+.projects-card {
+ background-color: var(--background-100);
+ border-radius: 8px;
+ cursor:pointer
+}
+
+.projects-card:hover {
+    outline: 2px solid var(--primary);
+}
+
+.card-header {
+    display: flex;
+    column-gap: 20px;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: start;
+    height: 60px;
+    border-bottom: 2px solid #3b3c3f
+}
+
+.card-content {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card-property {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
