@@ -69,10 +69,6 @@ button:hover{
 
 /* Content styles*/
 
-#content {
-    
-}
-
 #nav-buttons {
     display: flex;
     flex-direction: column;
@@ -104,9 +100,8 @@ header {
 }
 
 #project-list {
-    display: flex;
-    flex-direction: grid;
-    grid-template-columns: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: auto;
     margin: 40px 30px;
     gap: 20px;
@@ -147,4 +142,34 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+/* Form styles */
+dialog {
+    background-color: transparent;
+    border: none;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+}
+form {
+    width: 450px;
+    border-radius: 8px;
+    background-color: var(--background-100);
+    color: white;
+}
+
+form h2 {
+    padding: 20px
+    border-bottom: 2px solid var(var(--background-200))
+}
+
+form .input-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 25px;
 }
