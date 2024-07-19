@@ -163,8 +163,20 @@ form {
 }
 
 form h2 {
-    padding: 20px
+    padding: 20px;
     border-bottom: 2px solid var(var(--background-200))
+}
+
+form .form-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-button-area {
+    display: flex;
+    border-bottom: 10px solid var(--background-100);
+    margin:  20px;
+    justify-content: space-evenly;
 }
 
 form .input-list {
@@ -172,4 +184,21 @@ form .input-list {
     flex-direction: column;
     padding: 20px;
     row-gap: 25px;
+}
+
+#form-cancel-button:hover {
+    background-color: red ;
+}
+
+input, textarea, select {
+    color:white;
+    background-color: var(--background-200);
+    padding: 15px;
+    border-radius: 8px;
+    border:none;
+    font-size: var(--fontsize-medium)
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--primary)
 }
