@@ -176,7 +176,7 @@ form .form-button-area {
     display: flex;
     border-bottom: 10px solid var(--background-100);
     margin:  20px;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 form .input-list {
@@ -188,6 +188,9 @@ form .input-list {
 
 #form-cancel-button:hover {
     background-color: red ;
+}
+#form-cancel-button {
+    margin-right: 20px;
 }
 
 input, textarea, select {
@@ -201,4 +204,19 @@ input, textarea, select {
 
 input:focus, textarea:focus, select:focus {
     outline: 2px solid var(--primary)
+}
+
+.form-field-container label {
+    margin-bottom: 10px;
+}
+
+.material-icons-round{
+    vertical-align: center;
+}
+
+tooltip {
+    color: #505156;
+    font-size: var(var(--fontsize-medium));
+    margin-top: 5px;
+    font-style: italic;
 }
