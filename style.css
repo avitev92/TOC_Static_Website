@@ -214,9 +214,10 @@ input:focus, textarea:focus, select:focus {
     vertical-align: center;
 }
 
-tooltip {
+.tooltip {
     color: #505156;
     font-size: var(var(--fontsize-medium));
     margin-top: 5px;
     font-style: italic;
+    font-weight: bold;
 }
