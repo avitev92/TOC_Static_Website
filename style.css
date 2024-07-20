@@ -58,6 +58,12 @@ h5 {
 button:hover{
     background-color: var(--primary-400);
 }
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 /* Sidebar styles*/
 #sidebar {
     background-color: var(--background-100);
@@ -221,3 +227,18 @@ input:focus, textarea:focus, select:focus {
     font-style: italic;
     font-weight: bold;
 }
+
+.dashboard-card {
+    background-color: var(--background-100);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+#project-details-page > .main-page-content {
+    display: grid;
+    grid-template-columns: 475px 1fr;
+    padding: 20px 40px;
+    gap: 30px;
+    height: 100%;
+}
+

@@ -20,116 +20,133 @@
         </ul>
     </aside>
     <main id="content">
-        <dialog id="new-project-form">
-            <form>
-                <h2>New Model</h2>
-                <div class="input-list">
-                    <div class="form-field-container">
-                        <label><span class="material-icons-round">
-                            badge
-                            </span>Name</label>
-                        <input type="text" placeholder="What's the name of your project?">
-                        <span class="tooltip">TIP: Give it a short name.</span>
+        <div class="page" id="project-list-page" style="display:none">
+            <dialog id="new-project-form">
+                <form>
+                    <h2>New Model</h2>
+                    <div class="input-list">
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                badge
+                                </span>Name</label>
+                            <input type="text" placeholder="What's the name of your project?">
+                            <span class="tooltip">TIP: Give it a short name.</span>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                drive_file_rename_outline
+                                </span>Descripton</label>
+                            <textarea cols="30" rows="5" placeholder="Give your project a description."></textarea>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                person_pin
+                                </span>Role</label>
+                            <select>
+                                <option>Architect</option>
+                                <option>Engineer</option>
+                                <option>Developer</option>
+                            </select>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                not_listed_location
+                                </span>Status</label>
+                            <select>
+                                <option>Pending</option>
+                                <option>Active</option>
+                                <option>Finished</option>
+                            </select>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                calendar_month
+                                </span>Finish Date</label>
+                                <input type="date" placeholder="mm/dd/yyyy">
+                        </div>
                     </div>
-                    <div class="form-field-container">
-                        <label><span class="material-icons-round">
-                            drive_file_rename_outline
-                            </span>Descripton</label>
-                        <textarea cols="30" rows="5" placeholder="Give your project a description."></textarea>
+                    <div class="form-button-area">
+                        <button id="form-cancel-button">Cancel</button>
+                        <button>Accept</button>
                     </div>
-                    <div class="form-field-container">
-                        <label><span class="material-icons-round">
-                            person_pin
-                            </span>Role</label>
-                        <select>
-                            <option>Architect</option>
-                            <option>Engineer</option>
-                            <option>Developer</option>
-                        </select>
+                </form>
+            </dialog>
+            <header>
+                <h2>Projects</h2>
+                <div>
+                    <button>New Project</button>
+                </div>
+            </header>
+            <div id="project-list">
+                <div class="project-card">
+                    <div class="card-header">
+                        <p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1; ">HC</p>
+                        <div>
+                            <h3>Hospital Center</h5>
+                            <p>Community hospital located at downtown</p>
+                        </div>
                     </div>
-                    <div class="form-field-container">
-                        <label><span class="material-icons-round">
-                            not_listed_location
-                            </span>Status</label>
-                        <select>
-                            <option>Pending</option>
-                            <option>Active</option>
-                            <option>Finished</option>
-                        </select>
-                    </div>
-                    <div class="form-field-container">
-                        <label><span class="material-icons-round">
-                            calendar_month
-                            </span>Finish Date</label>
-                            <input type="date" placeholder="mm/dd/yyyy">
+                    <div class="card-content">
+                        <div class="card-property">
+                            <p style="color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style="color: #969696;">Role</p>
+                            <p>Engineer</p>
+                        </div>
+                        <div class="card-property">
+                            <p style="color: #969696;">Cost</p>
+                            <p>$2'000.000</p>
+                        </div>
+                        <div class="card-property">
+                            <p style="color: #969696;">Estimated progress</p>
+                            <p>47%</p>
+                        </div>
                     </div>
                 </div>
-                <div class="form-button-area">
-                    <button id="form-cancel-button">Cancel</button>
-                    <button>Accept</button>
+                <div class="project-card">
+                    <div class="card-header">
+                        <p style="background-color: #579721; padding: 10px; border-radius: 8px; aspect-ratio: 1; ">HC</p>
+                        <div>
+                            <h3>Default Project</h5>
+                            <p>You can delete this project if you want</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-property">
+                            <p style="color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style="color: #969696;">Role</p>
+                            <p>Architect</p>
+                        </div>
+                        <div class="card-property">
+                            <p style="color: #969696;">Cost</p>
+                            <p>$0</p>
+                        </div>
+                        <div class="card-property">
+                            <p style="color: #969696;">Estimated progress</p>
+                            <p>47%</p>
+                        </div>
+                    </div>
                 </div>
-            </form>
-        </dialog>
-        <header>
-            <h2>Projects</h2>
-            <div>
-                <button>New Project</button>
             </div>
-        </header>
-        <div id="project-list">
-            <div class="project-card">
-                <div class="card-header">
-                    <p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1; ">HC</p>
-                    <div>
-                        <h3>Hospital Center</h5>
-                        <p>Community hospital located at downtown</p>
-                    </div>
+        </div>
+        <div class="page" id="project-details-page">
+            <header>
+                <div>
+                    <h2>Hospital Center</h2>
+                    <p style="color:#969696">Community hospital located downtown</p>
                 </div>
-                <div class="card-content">
-                    <div class="card-property">
-                        <p style="color: #969696;">Status</p>
-                        <p>Active</p>
-                    </div>
-                    <div class="card-property">
-                        <p style="color: #969696;">Role</p>
-                        <p>Engineer</p>
-                    </div>
-                    <div class="card-property">
-                        <p style="color: #969696;">Cost</p>
-                        <p>$2'000.000</p>
-                    </div>
-                    <div class="card-property">
-                        <p style="color: #969696;">Estimated progress</p>
-                        <p>47%</p>
-                    </div>
+            </header>
+            <div class="main-page-content">
+                <div style="display: flex; flex-direction: column; row-gap: 20px;">
+                    <div class="dashboard-card">Project Information</div>
+                    <div class="dashboard-card">To-do List</div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="card-header">
-                    <p style="background-color: #579721; padding: 10px; border-radius: 8px; aspect-ratio: 1; ">HC</p>
-                    <div>
-                        <h3>Default Project</h5>
-                        <p>You can delete this project if you want</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-property">
-                        <p style="color: #969696;">Status</p>
-                        <p>Active</p>
-                    </div>
-                    <div class="card-property">
-                        <p style="color: #969696;">Role</p>
-                        <p>Architect</p>
-                    </div>
-                    <div class="card-property">
-                        <p style="color: #969696;">Cost</p>
-                        <p>$0</p>
-                    </div>
-                    <div class="card-property">
-                        <p style="color: #969696;">Estimated progress</p>
-                        <p>47%</p>
-                    </div>
-                </div>
+                <div id="viewer-container" class="dashboard-card"></div>
             </div>
         </div>
     </main>
