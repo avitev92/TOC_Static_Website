@@ -144,7 +144,24 @@
             <div class="main-page-content">
                 <div style="display: flex; flex-direction: column; row-gap: 20px;">
                     <div class="dashboard-card">Project Information</div>
-                    <div class="dashboard-card">To-do List</div>
+                    <div class="dashboard-card" id="to-do-list" style="display: flex; flex-grow: 1;">
+                        <div style="display: flex; margin: 20px; align-items: center; justify-content: space-between;">
+                            <div>
+                                <h3>To-do</h3>
+                            </div>
+                            <div style="display: flex; align-items: center;"><span class="material-icons-round">
+                                search
+                                </span>
+                            <input type="text" placeholder="Search To-Do's by name" style="margin-right: 10px;">
+                            <button "id="new-todo" style="background-color: transparent;">
+                                <span class="material-icons-round" style="color:white; margin-right:0;">
+                                add
+                                </span>
+                            </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="viewer-container" class="dashboard-card"></div>
             </div>
