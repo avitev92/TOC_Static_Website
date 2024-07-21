@@ -244,3 +244,13 @@ input:focus, textarea:focus, select:focus {
     height: 100%;
 }
 
+.todo-task {
+    background-color: var(--background-200);
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+    align-items: center;
+    font-size: var(--fontsize-medium);
+    padding:10px;
+    border-radius: 8px;
+}
