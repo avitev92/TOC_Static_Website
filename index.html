@@ -143,25 +143,40 @@
             </header>
             <div class="main-page-content">
                 <div style="display: flex; flex-direction: column; row-gap: 20px;">
-                    <div class="dashboard-card">Project Information</div>
+                    <div class="dashboard-card">
+                        Project Information
+                    </div>
                     <div class="dashboard-card" id="to-do-list" style="display: flex; flex-grow: 1;">
-                        <div style="display: flex; margin: 15px; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; margin-top: 15px; align-items: center; justify-content: space-between;">
                             <div>
-                                <h3>To-do</h3>
+                                <h3 style="margin-left: 20px">To-do</h3>
                             </div>
                             <div style="display: flex; align-items: center;"><span class="material-icons-round">
                                 search
                                 </span>
-                            <input type="text" placeholder="Search To-Do's by name" style="margin-right: 10px;">
+                            <input type="text" placeholder="Search To-Do's by name" style="margin-right: px;">
                             <button style="background-color: transparent;">
-                                <span class="material-icons-round" style="color:white; margin-right:0;">
+                                <span class="material-icons-round" style="color:white; margin:0;">
                                 add
                                 </span>
                             </button>
                             </div>
                         </div>
                         <div class="todo-task">
-                            <div style="background-color: #666666; margin-right: 10px; margin-left: 15px; border-radius: 8px; padding: 0;">
+                            <div style="background-color: #666666;margin: 10px; border-radius: 8px; padding: 0;">
+                                <span class="material-icons-round" style="margin: 0; padding: 8px">
+                                    pending_actions
+                                    </span>
+                            </div>
+                            <div style="display: flex; width: 16rem;">
+                                <p>Task description is here and you can make it as long as you want.</p>
+                            </div>
+                            <div style="margin-right: 15px;">
+                                <p>Fri, 20 Sep</p>
+                            </div>
+                        </div>
+                        <div class="todo-task">
+                            <div style="background-color: #666666;margin: 10px; border-radius: 8px; padding: 0;">
                                 <span class="material-icons-round" style="margin: 0; padding: 8px">
                                     pending_actions
                                     </span>

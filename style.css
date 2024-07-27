@@ -248,7 +248,7 @@ input:focus, textarea:focus, select:focus {
     background-color: var(--background-200);
     display: flex;
     justify-content: space-between;
-    margin:20px;
+    margin:10px;
     align-items: center;
     font-size: var(--fontsize-medium);
     padding:10px;
