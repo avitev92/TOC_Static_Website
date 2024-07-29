@@ -254,3 +254,10 @@ input:focus, textarea:focus, select:focus {
     padding:10px;
     border-radius: 8px;
 }
+
+.transparent-button {
+    background-color: transparent;
+    border-style: solid;
+    width: 7rem;
+    align-content: center;
+}
