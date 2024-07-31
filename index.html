@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Main page sidebar -->
     <aside id="sidebar">
         <img id="company logo" src="./assets/reshot-icon-mill-K5DQVANU3P.svg" alt="Company logo">
         <ul id="nav-buttons">
@@ -19,8 +20,10 @@
                 </span>Project 2</li>
         </ul>
     </aside>
+    <!-- Main page project list -->
     <main id="content">
         <div class="page" id="project-list-page" style="display:none">
+            <!-- New project form -->
             <dialog id="new-project-form">
                 <form>
                     <h2>New Model</h2>
@@ -78,6 +81,7 @@
                 </div>
             </header>
             <div id="project-list">
+                <!-- Project card -->
                 <div class="project-card">
                     <div class="card-header">
                         <p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1; ">HC</p>
@@ -134,6 +138,7 @@
                 </div>
             </div>
         </div>
+        <!-- Project details page -->
         <div class="page" id="project-details-page">
             <header>
                 <div>
@@ -141,6 +146,7 @@
                     <p style="color:#969696">Community hospital located downtown</p>
                 </div>
             </header>
+            <!-- Project details window -->
             <div class="main-page-content">
                 <div style="display: flex; flex-direction: column; row-gap: 20px;">
                     <div class="dashboard-card" style="display: flex; flex-direction: column;row-gap: 0.3rem;">
@@ -174,6 +180,7 @@
                             <div class="status-bar-fill">80%</div>
                         </div>
                     </div>
+                    <!-- To-Do list -->
                     <div class="dashboard-card" id="to-do-list" style="display: flex; flex-grow: 1;">
                         <div style="display: flex; margin-top: 15px; align-items: center; justify-content: space-between;">
                             <div>
@@ -190,6 +197,7 @@
                             </button>
                             </div>
                         </div>
+                        <!-- To-Do task -->
                         <div class="todo-task">
                             <div style="background-color: #666666;margin: 10px; border-radius: 8px; padding: 0;">
                                 <span class="material-icons-round" style="margin: 0; padding: 8px">
@@ -218,6 +226,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- IFC Viewer window -->
                 <div id="viewer-container" class="dashboard-card"></div>
             </div>
         </div>
