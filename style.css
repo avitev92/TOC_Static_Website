@@ -9,8 +9,10 @@
     --background: #202124;
     --background-100: #26282b;
     --background-200: #3b3c3f;
+    --background-300: #494b4e;
     --fontsize-small: 10px;
     --fontsize-medium: 14px;
+    --fontsize-medium-large: 16px;
     --fontsize-large: 18px;
     --fontsize-xlarge: 22px;
 }
@@ -300,10 +302,115 @@ input:focus, textarea:focus, select:focus {
     text-align: center;
     border-radius: 10px 0 0 10px;
 }
+
+
+/* User management page */
 .profile-picture {
-    width: 40px; /* Width of the image */
-    height: 40px; /* Height of the image */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image covers the entire circle */
-    margin-right: 15px; /* Space between the image and text */
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 15px; 
 }
+
+/* 
+50px = 3.125rem
+
+*/
+.user-table-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--background-200);
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+  
+  thead {
+    border-bottom: 1px solid #444;
+  }
+  
+  thead th {
+    color: #aaa;
+    font-weight: normal;
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid var(--background-300);
+    transition: background-color 0.3s;
+  }
+  
+  tbody tr:hover {
+    background-color: var(--background-300);
+  }
+  
+  td {
+    padding: 12px 10px;
+    color: #e0e0e0;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  
+  td:first-child {
+    width: 30px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-200);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .user-avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .project-tag {
+    display: inline-flex; 
+    align-items: center;  
+    justify-content: center; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    color: white;
+    font-size: var(--fontsize-medium);
+    margin-right: 5px; 
+  }
+  
+  .orange {
+    background-color: #ff9800;
+  }
+  
+  .green {
+    background-color: #4caf50;
+  }
+
+  .user-table th {
+    font-size: var(--fontsize-medium-large);
+    font-weight: bold;
+    color:white;
+  }
+  

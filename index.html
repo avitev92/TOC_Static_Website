@@ -242,12 +242,64 @@
                     <div style="display:flex; align-items: center;">
                         <img class="profile-picture" src="./assets/personal-pic.jpg" alt="Personal profile picture">
                         <div>
-                            <h3>Welcome,<br>Aleksandar!</h3>
+                            <h4>Welcome,<br>Aleksandar!</h4>
                         </div>
                     </div>
                 </div>
             </header>
-            
+            <!-- User list -->
+            <div class="user-table-container">
+                <table class="user-table">
+                  <thead>
+                    <tr>
+                      <th></th> <!-- For checkboxes -->
+                      <th>Name</th>
+                      <th>Job Position</th>
+                      <th>Discipline</th>
+                      <th>Access Level</th>
+                      <th>Project</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                      <td><input type="checkbox" checked></td>
+                      <td class="user-info">
+                        <div class="user-avatar-img">
+                            <img class="profile-picture" src="./assets/personal-pic.jpg" alt="Personal profile picture">
+                        </div>
+                        <div>
+                          <span>Alexander Vitev</span>
+                        </div>
+                      </td>
+                      <td>BIM Developer</td>
+                      <td>Software Development</td>
+                      <td>Administrator</td>
+                      <td>
+                        <span class="project-tag orange">HC</span>
+                        <span class="project-tag green">DP</span>
+                      </td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td class="user-info">
+                        <div class="user-avatar">J</div>
+                        <div>
+                          <span>Jin Tien</span>
+                        </div>
+                      </td>
+                      <td>Engineer</td>
+                      <td>Electrical</td>
+                      <td>MEP Specialist</td>
+                      <td>
+                        <span class="project-tag orange">HC</span>
+                      </td>
+                    </tr>
+                    <!-- Additional rows go here -->
+                  </tbody>
+                </table>
+              </div>
             <dialog id="new-user-form">
                 <form>
                     <h2>New Model</h2>
