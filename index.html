@@ -316,54 +316,59 @@
                 </ul>
                 <a href="#" class="next">Next →</a>
               </div>
-              
+            <!-- To see this in the browser paste this command in the browser console:
+             document.getElementById("new-user-form").showModal() -->
             <dialog id="new-user-form">
                 <form>
-                    <h2>New Model</h2>
+                    <h2>New user form:</h2>
                     <div class="input-list">
                         <div class="form-field-container">
                             <label><span class="material-icons-round">
                                 badge
                                 </span>Name</label>
                             <input type="text" placeholder="What's the name of your project?">
-                            <span class="tooltip">TIP: Give it a short name.</span>
+                            <span class="tooltip">TIP: Use full name if possible.</span>
                         </div>
                         <div class="form-field-container">
                             <label><span class="material-icons-round">
                                 drive_file_rename_outline
-                                </span>Descripton</label>
+                                </span>Job Position</label>
                             <textarea cols="30" rows="5" placeholder="Give your project a description."></textarea>
                         </div>
                         <div class="form-field-container">
                             <label><span class="material-icons-round">
                                 person_pin
-                                </span>Role</label>
+                                </span>Discipline</label>
                             <select>
                                 <option>Architect</option>
                                 <option>Engineer</option>
-                                <option>Developer</option>
+                                <option>Software Developer</option>
                             </select>
                         </div>
                         <div class="form-field-container">
                             <label><span class="material-icons-round">
                                 not_listed_location
-                                </span>Status</label>
+                                </span>Access Level</label>
                             <select>
-                                <option>Pending</option>
-                                <option>Active</option>
-                                <option>Finished</option>
+                                <option>Administrator</option>
+                                <option>Project Administrator</option>
+                                <option>MEP Specialist</option>
                             </select>
                         </div>
                         <div class="form-field-container">
                             <label><span class="material-icons-round">
                                 calendar_month
-                                </span>Finish Date</label>
-                                <input type="date" placeholder="mm/dd/yyyy">
+                                </span>Project</label>
+                                <select>
+                                    <option>HC</option>
+                                    <option>DR</option>
+                                    <option>None</option>
+                                </select>
                         </div>
                     </div>
                     <div class="form-button-area">
                         <button id="form-cancel-button">Cancel</button>
-                        <button>Accept</button>
+                        <button>Confirm</button>
                     </div>
                 </form>
             </dialog>
