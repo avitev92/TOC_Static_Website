@@ -233,7 +233,7 @@
                 <div id="viewer-container" class="dashboard-card"></div>
             </div>
         </div>
-        <div class="page" id="user-management-page">
+        <div class="page" id="user-management-page" style="position: relative">
             <header style="display: flex; align-items: center;">
                 <h2>User Management</h2>
                 <div style="display: flex; align-items: center;">
@@ -252,7 +252,7 @@
                 <table class="user-table">
                   <thead>
                     <tr>
-                      <th></th> <!-- For checkboxes -->
+                      <th><input type="checkbox" unchecked></th> <!-- For checkboxes -->
                       <th>Name</th>
                       <th>Job Position</th>
                       <th>Discipline</th>
@@ -299,7 +299,21 @@
                     <!-- Additional rows go here -->
                   </tbody>
                 </table>
+            </div>
+            <!-- Page flip (pagination) -->
+            <div class="pagination">
+                <a href="#" class="prev">← Previous</a>
+                <ul class="page-list">
+                  <li><a href="#" class="page-number active">1</a></li>
+                  <li><a href="#" class="page-number">2</a></li>
+                  <li><a href="#" class="page-number">3</a></li>
+                  <li><span class="ellipsis">...</span></li>
+                  <li><a href="#" class="page-number">67</a></li>
+                  <li><a href="#" class="page-number">68</a></li>
+                </ul>
+                <a href="#" class="next">Next →</a>
               </div>
+              
             <dialog id="new-user-form">
                 <form>
                     <h2>New Model</h2>
