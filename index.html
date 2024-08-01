@@ -23,7 +23,7 @@
     </aside>
     <!-- Main page project list -->
     <main id="content">
-        <div class="page" id="project-list-page" >
+        <div class="page" id="project-list-page" style="display: none" >
             <!-- New project form -->
             <dialog id="new-project-form">
                 <form>
@@ -142,7 +142,7 @@
             </div>
         </div>
         <!-- Project details page -->
-        <div class="page" id="project-details-page">
+        <div class="page" id="project-details-page" style="display:none">
             <header>
                 <div>
                     <h2>Hospital Center</h2>
@@ -232,6 +232,72 @@
                 <!-- IFC Viewer window -->
                 <div id="viewer-container" class="dashboard-card"></div>
             </div>
+        </div>
+        <div class="page" id="user-management-page">
+            <header style="display: flex; align-items: center;">
+                <h2>User Management</h2>
+                <div style="display: flex; align-items: center;">
+                    <span class="material-icons-round">search</span>
+                    <input type="text" placeholder="Search users" style="border-radius: 25px; margin-right: 20px;">
+                    <div style="display:flex; align-items: center;">
+                        <img class="profile-picture" src="./assets/personal-pic.jpg" alt="Personal profile picture">
+                        <div>
+                            <h3>Welcome,<br>Aleksandar!</h3>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <dialog id="new-user-form">
+                <form>
+                    <h2>New Model</h2>
+                    <div class="input-list">
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                badge
+                                </span>Name</label>
+                            <input type="text" placeholder="What's the name of your project?">
+                            <span class="tooltip">TIP: Give it a short name.</span>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                drive_file_rename_outline
+                                </span>Descripton</label>
+                            <textarea cols="30" rows="5" placeholder="Give your project a description."></textarea>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                person_pin
+                                </span>Role</label>
+                            <select>
+                                <option>Architect</option>
+                                <option>Engineer</option>
+                                <option>Developer</option>
+                            </select>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                not_listed_location
+                                </span>Status</label>
+                            <select>
+                                <option>Pending</option>
+                                <option>Active</option>
+                                <option>Finished</option>
+                            </select>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">
+                                calendar_month
+                                </span>Finish Date</label>
+                                <input type="date" placeholder="mm/dd/yyyy">
+                        </div>
+                    </div>
+                    <div class="form-button-area">
+                        <button id="form-cancel-button">Cancel</button>
+                        <button>Accept</button>
+                    </div>
+                </form>
+            </dialog>
         </div>
     </main>
 </body>

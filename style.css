@@ -300,3 +300,10 @@ input:focus, textarea:focus, select:focus {
     text-align: center;
     border-radius: 10px 0 0 10px;
 }
+.profile-picture {
+    width: 40px; /* Width of the image */
+    height: 40px; /* Height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+    margin-right: 15px; /* Space between the image and text */
+}
