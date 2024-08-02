@@ -65,6 +65,7 @@ hr {
 }
 button:hover{
     background-color: var(--primary-400);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .page {
@@ -476,7 +477,7 @@ td:first-child {
 .page-number:hover,
 .prev:hover,
 .next:hover {
-    background-color: var(--background-200);
+    background-color: var(--background-300);
     color: #ffffff;
 }
   
