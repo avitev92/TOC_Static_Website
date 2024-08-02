@@ -23,10 +23,10 @@
     </aside>
     <!-- Main page project list -->
     <main id="content">
-        <div class="page" id="project-list-page" style="display: none" >
+        <div class="page" id="project-list-page" >
             <!-- New project form -->
-            <dialog id="new-project-form">
-                <form>
+            <dialog id="new-project-form-dialog">
+                <form id="new-project-form" method="dialog">
                     <h2>New Model</h2>
                     <div class="input-list">
                         <div class="form-field-container">
@@ -71,7 +71,7 @@
                     </div>
                     <div class="form-button-area">
                         <button id="form-cancel-button">Cancel</button>
-                        <button>Accept</button>
+                        <button>Create project</button>
                     </div>
                 </form>
             </dialog>
@@ -233,7 +233,7 @@
                 <div id="viewer-container" class="dashboard-card"></div>
             </div>
         </div>
-        <div class="page" id="user-management-page" style="position: relative">
+        <div class="page" id="user-management-page" style="position: relative; display: none">
             <header style="display: flex; align-items: center;">
                 <div style="display: flex; align-items: center;">
                     <h2>User Management</h2>
@@ -376,5 +376,6 @@
             </dialog>
         </div>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>
