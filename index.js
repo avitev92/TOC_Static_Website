@@ -17,11 +17,31 @@ if (newProjectButton != null) {
 }
 
 const projectForm = document.getElementById("new-project-form")
+
 if (projectForm != null) {
     projectForm.addEventListener("submit", (event) => {
         event.preventDefault()
         const formData = new FormData (projectForm)
+        formData.append("Name: ",formData.get("form-name"))
+        formData.append("Description: ",formData.get("form-description"))
+        formData.append("Role: ",formData.get("form-role"))
+        formData.append("Status: ",formData.get("form-status"))
+        formData.append("Date: ",formData.get("form-date"))
+        logConsoleData(formData)
     })
 } else {
     console.warn("No form was found. Check element ID!")
+}
+
+function logConsoleData(formObject) {
+    const appendedKeys = ["Name", "Description", "Role", "Status", "Date"];
+
+    appendedKeys.forEach(key => {
+        if (formObject.has(key)) {
+            console.log(`${key}: ${formObject.get(key)}`);
+        }
+        else {
+            console.log("no key found")
+        }
+    });
 }
